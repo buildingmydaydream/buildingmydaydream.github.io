@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building My Daydream | Start Here</title>
+<meta name="description" content="Building My Daydream: the free Mirror Method, the free Punch List, new videos, and how to work with Brandi.">
+<meta property="og:title" content="Building My Daydream | Start Here">
+<meta property="og:description" content="That daydream won't build itself. But you don't have to build it alone.">
+<meta name="theme-color" content="#271F30">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/icon-256.png">
+<meta property="og:image" content="img/icon-256.png">
+<style>
+@font-face { font-family: "Horizon"; src: url("fonts/Horizon.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Aileron"; src: url("fonts/Aileron-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Aileron"; src: url("fonts/Aileron-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Aileron"; src: url("fonts/Aileron-Black.woff2") format("woff2"); font-weight: 900; font-display: swap; }
+
+:root {
+  --ink: #271F30;
+  --plum: #3B3343;
+  --violet: #5E17EB;
+  --violet-soft: #A98BFF;
+  --blush: #F9CFF2;
+  --mist: #9E94A6;
+  --white: #FFFFFF;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--ink);
+  background-image: linear-gradient(180deg, rgba(39,31,48,.55) 0%, rgba(39,31,48,.35) 120px, #271F30 400px), url("img/astral.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 400px, 100% 400px;
+  background-position: top center;
+  color: var(--white);
+  font-family: "Aileron", "Open Sans", "Segoe UI", system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+main { max-width: 520px; margin: 0 auto; padding: 40px 16px 56px; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid var(--blush); outline-offset: 3px; }
+
+header { text-align: center; margin-bottom: 30px; }
+.kicker {
+  display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--blush); color: var(--ink);
+  font-size: 12px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase;
+}
+h1 {
+  margin: 18px 0 12px; font-family: "Horizon", "Aileron", sans-serif; font-weight: 400;
+  font-size: clamp(30px, 9.4vw, 44px); line-height: 1.02; letter-spacing: .02em; text-transform: uppercase; text-wrap: balance;
+}
+h1 { margin: 16px 0 6px; }
+h1 img { display: block; width: min(100%, 400px); height: auto; margin: 0 auto; }
+.tagline { margin: 0 auto; max-width: 30ch; color: #E4DDEA; font-size: 17px; text-wrap: balance; }
+
+.about { display: inline-flex; align-items: center; gap: 14px; margin: 22px auto 0; padding: 10px 20px 10px 10px; border-radius: 999px; background: rgba(59,51,67,.85); border: 1px solid rgba(249,207,242,.25); text-align: left; }
+.about img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex: none; border: 2px solid var(--blush); }
+.about p { margin: 0; font-size: 15px; line-height: 1.3; color: #E4DDEA; }
+.about strong { color: #fff; font-size: 17px; }
+
+h2 {
+  margin: 36px 0 12px; font-family: "Horizon", "Aileron", sans-serif; font-weight: 400; color: var(--blush);
+  font-size: 17px; letter-spacing: .08em; text-transform: uppercase;
+}
+
+/* start-here cards */
+.card {
+  display: block; margin-top: 12px; padding: 20px 20px 18px; border-radius: 20px; background: var(--white); color: var(--ink);
+  box-shadow: 0 12px 34px rgba(0,0,0,.35); transition: transform .12s ease;
+}
+.card .tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--violet); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.card .name { margin-top: 10px; font-family: "Horizon", "Aileron", sans-serif; font-size: 22px; line-height: 1.1; text-transform: uppercase; }
+.card .note { margin-top: 8px; font-size: 15.5px; color: #4A4154; }
+.card .go { display: inline-block; margin-top: 14px; font-weight: 900; color: var(--violet); font-size: 15px; letter-spacing: .04em; text-transform: uppercase; }
+
+/* featured video */
+.feature { display: block; margin-top: 12px; border-radius: 20px; overflow: hidden; background: var(--plum); transition: transform .12s ease; }
+.feature .thumb { position: relative; aspect-ratio: 16/9; background: #15101b center/cover no-repeat; }
+.feature .play { position: absolute; inset: 0; margin: auto; width: 62px; height: 62px; border-radius: 50%; background: var(--violet); display: grid; place-items: center; }
+.feature .play::after { content: ""; margin-left: 5px; border-left: 19px solid #fff; border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+.feature .txt { padding: 14px 18px 16px; }
+.feature .label { color: var(--blush); font-size: 12px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.feature .title { margin-top: 4px; font-weight: 700; font-size: 18px; line-height: 1.25; }
+
+.promo { display: block; margin-top: 14px; padding: 13px 16px; border-radius: 14px; text-align: center; background: var(--blush); color: var(--ink); font-weight: 700; }
+
+/* buttons */
+.btn {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; margin-top: 10px;
+  padding: 12px 18px; border-radius: 16px; background: var(--plum); border: 1px solid rgba(249,207,242,.22);
+  color: #fff; font-weight: 700; font-size: 17px; transition: transform .12s ease, background .12s ease;
+}
+.btn small { display: block; margin-top: 2px; font-weight: 400; font-size: 14px; color: #D5CCDC; }
+.btn::after { content: "\2192"; font-size: 20px; color: var(--blush); flex: none; }
+.btn.violet { background: var(--violet); border-color: transparent; }
+.btn.violet small { color: #E9E0FF; }
+.btn:hover, .card:hover, .feature:hover, .vid:hover { transform: translateY(-2px); }
+
+.vids { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.vid { border-radius: 14px; overflow: hidden; background: var(--plum); transition: transform .12s ease; }
+.vid .thumb { aspect-ratio: 16/9; background: #15101b center/cover no-repeat; }
+.vid .title { padding: 8px 10px 10px; font-size: 13.5px; line-height: 1.25; }
+
+/* newsletter */
+.news { margin-top: 36px; padding: 22px 18px 18px; border-radius: 20px; background: var(--violet); }
+.news h2 { margin: 0 0 6px; color: #fff; }
+.news p { margin: 0 0 14px; font-size: 15.5px; }
+.news label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.news input[type=text], .news input[type=email] { width: 100%; height: 50px; margin-bottom: 10px; padding: 0 14px; border-radius: 12px; border: 0; background: #fff; color: var(--ink); font: inherit; font-size: 16px; }
+.news .hp { position: absolute; left: -9999px; }
+.news button { width: 100%; height: 52px; border: 0; border-radius: 12px; background: var(--ink); color: #fff; font: inherit; font-weight: 900; font-size: 16px; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.news button:disabled { opacity: .6; cursor: default; }
+.news .msg { margin: 12px 0 0; font-weight: 700; color: var(--blush); }
+.news .msg:empty { display: none; }
+
+.lede { margin: -4px 0 14px; font-size: 18px; font-weight: 700; line-height: 1.3; text-wrap: balance; }
+.lede:empty, .proof:empty { display: none; }
+.proof { margin: 14px 2px 0; font-size: 15px; }
+.proof a { color: var(--blush); font-weight: 700; text-decoration: underline; }
+footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid rgba(158,148,166,.4); color: var(--mist); font-size: 13.5px; text-align: center; }
+footer p { margin: 0 0 8px; }
+footer a { color: #D5CCDC; text-decoration: underline; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="kicker" id="kicker"></span>
+    <h1><img src="img/logo.png" width="1200" height="300" alt="Building My Daydream"></h1>
+    <p class="tagline" id="tagline"></p>
+    <div class="about" id="about" hidden>
+      <img id="about-photo" alt="Brandi" width="72" height="72">
+      <p><strong id="about-name"></strong><br><span id="about-line"></span></p>
+    </div>
+  </header>
+
+  <section id="featured"></section>
+
+  <section>
+    <h2>Start here</h2>
+    <div id="start"></div>
+  </section>
+
+  <section>
+    <h2>Watch + read</h2>
+    <div id="channels"></div>
+    <div class="vids" id="vids"></div>
+  </section>
+
+  <section class="news" id="news" hidden>
+    <h2 id="news-h"></h2>
+    <p id="news-p"></p>
+    <form id="news-form" method="POST" target="_blank" novalidate>
+      <label for="FIRSTNAME">First name</label>
+      <input type="text" id="FIRSTNAME" name="FIRSTNAME" placeholder="First name" maxlength="200" autocomplete="given-name" required>
+      <label for="EMAIL">Email</label>
+      <input type="email" id="EMAIL" name="EMAIL" placeholder="Email address" autocomplete="email" required>
+      <input class="hp" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="locale" value="en">
+      <button type="submit" id="news-btn"></button>
+      <p class="msg" id="news-msg" role="status"></p>
+    </form>
+  </section>
+
+  <section id="work-wrap">
+    <h2>Work with me</h2>
+    <p class="lede" id="work-intro"></p>
+    <div id="work"></div>
+    <p class="proof" id="work-proof"></p>
+  </section>
+
+  <section id="other-wrap">
+    <h2>Also ours</h2>
+    <div id="other"></div>
+  </section>
+
+  <footer>
+    <p id="contact"></p>
+    <p>&copy; Building My Daydream</p>
+  </footer>
+</main>
+
+<script src="links.js"></script>
+<script>
+(function () {
+  var d = window.BMD || {};
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function link(cls, url) { var a = el("a", cls); a.href = url; a.target = "_blank"; a.rel = "noopener"; return a; }
+  function yt(id) { return "https://youtu.be/" + id; }
+  function thumb(id) { var t = el("div", "thumb"); t.style.backgroundImage = "url(https://i.ytimg.com/vi/" + id + "/hqdefault.jpg)"; return t; }
+  function button(item, cls) {
+    var a = link("btn" + (cls ? " " + cls : ""), item.url), s = el("span", null, item.name);
+    if (item.note) s.appendChild(el("small", null, item.note));
+    a.appendChild(s); return a;
+  }
+  function $(id) { return document.getElementById(id); }
+
+  $("kicker").textContent = d.kicker || "";
+  $("tagline").textContent = d.tagline || "";
+  if (d.about) { $("about").hidden = false; $("about-photo").src = d.about.photo; $("about-name").textContent = d.about.name; $("about-line").textContent = d.about.line; }
+
+  var f = $("featured");
+  if (d.featured) {
+    var a = link("feature", yt(d.featured.youtubeId)), t = thumb(d.featured.youtubeId), x = el("div", "txt");
+    t.appendChild(el("span", "play"));
+    x.appendChild(el("div", "label", d.featured.label || "Newest video"));
+    x.appendChild(el("div", "title", d.featured.title));
+    a.appendChild(t); a.appendChild(x); f.appendChild(a);
+  }
+  if (d.promo) { var p = link("promo", d.promo.url); p.textContent = d.promo.text; f.appendChild(p); }
+
+  (d.startHere || []).forEach(function (c) {
+    var a = link("card", c.url);
+    if (c.tag) a.appendChild(el("span", "tag", c.tag));
+    a.appendChild(el("div", "name", c.name));
+    if (c.note) a.appendChild(el("div", "note", c.note));
+    a.appendChild(el("span", "go", "Start →"));
+    $("start").appendChild(a);
+  });
+
+  (d.channels || []).forEach(function (c, i) { $("channels").appendChild(button(c, i === 0 ? "violet" : "")); });
+  (d.moreVideos || []).forEach(function (v) {
+    var a = link("vid", yt(v.youtubeId)); a.appendChild(thumb(v.youtubeId)); a.appendChild(el("div", "title", v.title)); $("vids").appendChild(a);
+  });
+
+  var n = d.newsletter;
+  if (n && n.formUrl) {
+    var form = $("news-form"), btn = $("news-btn"), msg = $("news-msg");
+    $("news").hidden = false;
+    $("news-h").textContent = n.heading;
+    $("news-p").textContent = n.blurb;
+    btn.textContent = n.button || "Sign me up";
+    form.action = n.formUrl;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = form.FIRSTNAME.value.trim(), email = form.EMAIL.value.trim();
+      if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = "Add your first name and a valid email."; return; }
+      btn.disabled = true; msg.textContent = "";
+      fetch(n.formUrl + "?isAjax=1", { method: "POST", body: new FormData(form) })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j && j.success) { form.reset(); msg.textContent = n.success || "You're in."; }
+          else { msg.textContent = "That didn't go through. Check your email address and try again."; }
+        })
+        .catch(function () { msg.textContent = "That didn't go through. Please try again in a minute."; })
+        .then(function () { btn.disabled = false; });
+    });
+  }
+
+  $("work-intro").textContent = d.workIntro || "";
+  (d.work || []).forEach(function (w) { $("work").appendChild(button(w, w.primary ? "violet" : "")); });
+  if (d.workProof) { var wp = link(null, d.workProof.url); wp.textContent = d.workProof.text + " →"; $("work-proof").appendChild(wp); }
+  if (!(d.work || []).length) $("work-wrap").hidden = true;
+  (d.otherProjects || []).forEach(function (o) { $("other").appendChild(button(o)); });
+  if (!(d.otherProjects || []).length) $("other-wrap").hidden = true;
+
+  if (d.contactUrl) { var c = link(null, d.contactUrl); c.textContent = "Get in touch"; $("contact").appendChild(c); }
+})();
+</script>
+</body>
+</html>
