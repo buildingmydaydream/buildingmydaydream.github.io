@@ -84,7 +84,7 @@ window.BMD = {
   workProof: { text: "Client story: her new site sold her top offer within a month", url: "https://www.buildingmydaydream.com/amanda-story" },
 
   otherProjects: [
-    { name: "Remote Ramblers", note: "Four years in a school bus, now 14 acres in the South", url: "https://remoteramblers.github.io" },
+    { name: "Remote Ramblers", note: "Four years in a school bus, now 14 acres in the South", url: "https://links.remoteramblers.com" },
     { name: "Etch and Echo Goods", note: "Our leather goods shop on Etsy", url: "https://etchandechogoods.etsy.com" }
   ],
 
